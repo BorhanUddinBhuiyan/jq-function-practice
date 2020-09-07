@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Responsive Website design by Bootstrap" />
+    <meta name="keywords" content="layout,grid,boostrap,html,css" />
+    <meta name="author" content="Borhan Uddin Bhuiyan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- fonts link -->
+
+    <!-- Bootstrap CSS CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <!-- custom css link --> 
+    <link rel="shorcut icon" href="images/borhan.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>jQ practice | Borhan</title>
+  </head>
+  <body>
+    <div class="container border border-success rounded my-3">
+
+      <div class="row justify-content-center">
+        <div class="col-12 text-center ">
+          <h1 class=" text-success display-4 font-weight-bold"> jQuery function practice</h1>
+        </div>
+      </div><hr>
+              <!-- jq effects -->
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <p class="h1 text-primary">jQuery Effects</p>
+        </div>
+      </div>
+      <div class="row mb-5 justify-content-center">
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">hide()</h2>
+          <p class="text-muted">
+            With jQuery, you can hide HTML elements with the hide() methods.
+          </p>
+          <div class="hide bg-info p-3 border border-dark rounded">
+            <button class=" btnhide btn btn-sm btn-primary">Hide me</button>
+            <p class="text-light">Contact: Helen Bennett<br> 
+            Garden House Crowther Way<br>
+            London</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">show()</h2>
+          <p class="text-muted">
+            With jQuery, you can show a hide HTML elements with the show() methods.
+          </p>
+          <button class=" btnshow btn btn-sm btn-primary mb-2">show me</button>
+          <div class="show hide bg-info p-3 border border-dark rounded" style="display: none;">
+            <button class=" btnhide btn btn-sm btn-primary">Hide me</button>
+            <p class="text-light">Contact: Helen Bennett<br> 
+            Garden House Crowther Way<br>
+            London</p>
+          </div>
+          
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">toggle()</h2>
+          <p class="text-muted">
+            You can also toggle between hiding and showing with the toggle() method.
+          </p>
+          <button class=" btntog2  mb-2 btn btn-sm btn-primary">Toggle me</button>
+          <div class=" bg-info p-3 border border-dark rounded">
+              <p class="tog2 text-light">Contact: Helen Bennett<br> 
+              Garden House Crowther Way<br>
+              London</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">fadeIn()</h2>
+          <p class="text-muted">
+            The jQuery fadeIn() is used to fade in a hidden element.
+          </p>
+          <button class=" btnfi  mb-2 btn  btn-primary">Click to fade in boxes</button>
+          <div class="w-50 bg-danger pb-5 text-center fib1" style="display: none;">red</div>        
+          <div class="w-50 bg-success pb-5 text-center fib2" style="display: none;">green</div>        
+          <div class="w-50 bg-warning pb-5 text-center fib3" style="display: none;">yellow</div>  
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">fadeOut()</h2>
+          <p class="text-muted">
+            The jQuery fadeOut() method is used to fade out a element.
+          </p>
+          <button class=" btnfo  mb-2 btn  btn-primary">Click to fade out boxes</button>
+          <div class="w-50 bg-danger pb-5 text-center fob1">danger</div>        
+          <div class="w-50 bg-success pb-5 text-center fob2">success</div>        
+          <div class="w-50 bg-warning pb-5 text-center fob3">warning</div>        
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">fadeToggle()</h2>
+          <p class="text-muted">
+            The jQuery fadeToggle() method toggles between the fadeIn() and fadeOut().
+          </p>
+          <button class=" btnft  mb-2 btn  btn-primary">Click to fade toggle boxes</button>
+          <div class="w-50 bg-danger pb-5 text-center ftb1">danger</div>        
+          <div class="w-50 bg-success pb-5 text-center ftb2">success</div>        
+          <div class="w-50 bg-warning pb-5 text-center ftb3">warning</div>        
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">fadeTo()</h2>
+          <p class="text-muted">The jQuery fadeTo() method allows fading to a given opacity (value between 0 and 1).
+          </p>
+          <button class=" btnfto  mb-2 btn  btn-primary">Click to fade To boxes</button>
+          <div class="w-50 bg-danger pb-5 text-center ftob1">danger</div>        
+          <div class="w-50 bg-success pb-5 text-center ftob2">success</div>        
+          <div class="w-50 bg-warning pb-5 text-center ftob3">warning</div>        
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">slideDown()</h2>
+          <p class="text-muted">The jQuery slideDown() method is used to slide down an element.
+          </p>
+          <button class=" btnsd btn  btn-block btn-dark">Click to slide down panel</button>
+          <div class="bg-secondary p-5 text-center text-light sdb" style="display: none;">Hello World! <br>
+          This is <span class="text-warning"> sildeDown </span> method.</div>                
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">slideUp()</h2>
+          <p class="text-muted">The jQuery slideUp() method is used to slide up an element.
+          </p>
+          <button class=" btnsu btn  btn-block btn-dark">Click to slide up panel</button>
+          <div class="bg-secondary p-5 text-center text-light sub">Hello World! <br>
+          This is <span class="text-warning"> sildeUp </span> method.</div>                
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">slideToggle()</h2>
+          <p class="text-muted">The jQuery slideToggle() method is used to slide Toggle an element.
+          </p>
+          <button class=" btnstog btn  btn-block btn-dark">Click to slide Toggle panel</button>
+          <div class="bg-secondary p-5 text-center text-light stog">Hello World! <br>
+          This is <span class="text-warning"> sildeToggle </span> method.</div>                
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">animate()</h2>
+          <p class="text-muted">By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!
+          </p>
+          <button class=" btnani btn btn-primary">Start Animate</button>
+          <div class="bg-warning p-5 text-center text-light ani w-75" style="position: absolute;">Hello</div>                
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">stop()</h2>
+          <p class="text-muted">The jQuery stop() method is used to stop animations or effects before it is finished.
+          </p>
+          <button class=" btnstp1 btn mb-3 btn-primary">Start sliding</button>
+
+          <button class="btnstp2 btn mb-3 btn-danger">Stop sliding</button><br>
+          <button class=" btnstp3 btn  btn-block btn-dark">Click to slide down/up the panel</button>
+
+
+          <div class="bg-secondary p-5 text-center text-light stp">Hello World! <br>
+          The jQuery <span class="text-warning">stop()</span> method is used to stop an animation or effect before it is finished.
+          </div>                
+        </div>
+      </div><hr>
+        <!-- jq common event -->
+        <div class="col-12">
+          <div class="text-center"><p class="h1 text-primary">Common Event Methods</p></div>
+        </div>
+      <div class="row mb-5 justify-content-center">
+         <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">click()</h2>
+          <button type="button" class="btnclk btn btn-primary my-2">Click here to hide</button>
+          <div class="click p-3 bg-secondary">The click() method attaches an event handler function to an HTML element. <br>
+
+          The function is executed when the user clicks on the HTML element.</div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">dblclick()</h2>
+          <button type="button" class="btndblc btn btn-primary my-2">Double click here to hide</button>
+          <div class="dblclick p-3 bg-secondary">The dblclick() method attaches an event handler function to an HTML element. <br>
+
+          The function is executed when the user double-clicks on the HTML element.</div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">mousedown()</h2>
+          <div id="md" class="p-3 bg-secondary rounded"><span class="text-warning">Please press mouse left,middle or right button here for alert...!!</span><br><br>
+
+          The function is executed, when the left, middle or right mouse button is pressed down, while the mouse is over the HTML element.</div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">mouseup()</h2>
+          <div id="mu" class="p-3 bg-secondary rounded"><span class="text-warning">Please press & release mouse left,middle or right button here for alert...!!</span> <br><br>
+
+          The function is executed, when the left, middle or right mouse button is released, while the mouse is over the HTML elemen.</div>
+        </div>
+        
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">mouseenter()</h2>
+          <div id="me" class="p-3 bg-secondary rounded"><span class="text-warning">Please enter mouse pointer here for alert...!! </span><br><br>
+
+          The function is executed when the mouse pointer enters the HTML element.</div>
+        </div>      
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">mouseleave()</h2>
+          <div id="ml" class="p-3 bg-secondary rounded"> <span class="text-warning">Please enter and leave mouse pointer here for alert...!!!</span><br><br>
+
+          The function is executed when the mouse pointer leaves the HTML element.</div>
+        </div>     
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">hover()</h2>
+          <div id="hv" class="p-3 bg-secondary rounded"><span class="text-warning">Please hover here for entering & leaving alert...!! </span><br><br>
+
+          The hover() method takes two functions and is a combination of the mouseenter() and mouseleave() methods.</div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">tigger()</h2>
+          <button type="button" class="btntig btn btn-primary my-2">Trigger for the input field</button>
+          <input class="tigger form-control" type="text" placeholder="Hello World">
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">focus()</h2>
+          <p class="text-muted m-0">The function is executed when the form field gets focus.</p>
+          <div class="p-3">
+            Name: <input class="form-control  fcs" type="text" placeholder ="fullname"><br>
+            Email: <input class="form-control  fcs" type="text" placeholder ="email">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">blur()</h2>
+          <p class="text-muted m-0">
+            The function is executed when the form field loses focus.
+          </p>
+          <div class="p-3">
+            Name: <input class="form-control blr" type="text" placeholder ="fullname"><br>
+            Email: <input class="form-control blr" type="text" placeholder ="email">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h2 class="text-secondary">on()</h2>
+          <p class="text-muted">
+            The on() method attaches one or more event handlers for the selected elements.
+          </p>
+          <div class="p-3 bg-secondary rounded">
+            <p id="on">Click or move the mouse pointer over this paragraph.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <h2 class="text-secondary">off()</h2>
+            <p class="text-muted">
+              The off() method is most often used to remove event handlers attached with the on() method
+            </p>
+            <p class="off bg-light">Click this paragraph to change its background color.</p>
+            <p class="off bg-light">Click the button below and then click on this paragraph (the click event is removed).</p>
+
+            <button class="btnoff btn btn-primary">Remove the click event handler</button>
+        </div>
+      </div>
+
+    </div>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvpaoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  <!-- custom js -->
+
+    <script>
+      $(document).ready(function(){
+        // jq effects
+        // hide
+      $('.btnhide,.hide').click(function(){
+        $(this).parents('.hide').hide("slow")
+      });
+      // show
+      $('.btnshow').click(function(){
+        $('.show').show(2000);
+      });
+      // toggle
+      $(".btntog2").click(function(){
+        $(".tog2").toggle(2000);
+      });
+      // fadeIn
+      $(".btnfi").click(function(){
+        $(".fib1").fadeIn("fast");
+        $(".fib2").fadeIn("slow");
+        $(".fib3").fadeIn(2000);
+      });
+      // fadeOut
+      $(".btnfo").click(function(){
+        $(".fob1").fadeOut("fast");
+        $(".fob2").fadeOut("slow");
+        $(".fob3").fadeOut(2000);
+      });
+      // fadeToggle
+      $(".btnft").click(function(){
+        $(".ftb1").fadeToggle("fast");
+        $(".ftb2").fadeToggle("slow");
+        $(".ftb3").fadeToggle(2000);
+      });
+      // fadeTo
+      $(".btnfto").click(function(){
+        $(".ftob1").fadeTo("fast",.5);
+        $(".ftob2").fadeTo("slow",.3);
+        $(".ftob3").fadeTo(2000,.2);
+      });
+      // slideDown
+      $(".btnsd").click(function(){
+        $(".sdb").slideDown("slow");
+      });
+    // slideUp
+      $(".btnsu").click(function(){
+        $(".sub").slideUp("slow");
+      });
+      // slidetoggle
+      $(".btnstog").click(function(){
+        $(".stog").slideToggle("slow");
+      });
+      // animate
+      $(".btnani").click(function(){
+        var div= $(".ani");
+        div.animate({left:'70px'},"slow");
+        div.animate({hight:'200px'},"fast");
+        div.animate({fontSize:'3rem'},"slow");
+      });
+      // stop
+      $(".btnstp1,.btnstp3").click(function(){
+        $(".stp").slideToggle(5000);
+      });
+
+      $(".btnstp2").click(function(){
+        $(".stp").stop();
+      });
+
+      // jq common events
+        // click
+        $('.btnclk').click(function(){
+          $('.click').hide();
+        });
+        // double click
+        $('.btndblc').dblclick(function() {
+          $('.dblclick').hide();
+        });
+        // tigger
+        $("input").select(function(){
+          $("input").after("<br>Triggers all events bound to the selected elements.");
+        });
+        $('.btntig').click(function(){
+         $("input").trigger("select");
+        });
+        // mouseenter
+        $("#me").mouseenter(function(){
+          alert("Thank you for mouse entering on the element");
+        });
+        // mouseleave
+        $("#ml").mouseleave(function(){
+          alert("Bye! you leave the element");
+        });
+        // hover
+        $("#hv").hover(function(){
+          alert("Thank you for mouse entering on the element");
+        },
+        function(){
+        alert("Bye! you leave the element");});
+        // mousedown
+        $("#md").mousedown(function(){
+          alert("Thank you for mouse down here")
+        });
+        // mouseup
+        $("#mu").mousedown(function(){
+          alert("Thank you, you release the mouse button.")
+        });
+        // focus
+        $(".fcs").focus(function(){
+          $(this).css("background-color", "yellow");
+        });
+        // blur
+        $(".blr").focus(function(){
+          $(this).css("background-color", "green");
+        });
+        // on
+        $("#on").on({
+          mouseenter: function(){
+            $(this).css("background-color", "lightgray");
+          },  
+          mouseleave: function(){
+            $(this).css("background-color", "lightblue");
+          }, 
+          click: function(){
+            $(this).css("background-color", "yellow");
+          }  
+        });
+        // off
+      $('.off').on("click", function(){
+        $(this).css("background-color", "pink");
+      });
+      $('.btnoff').click(function(){
+        $('.off').off("click");
+       });
+      });
+    </script>
+  </body>
+</html>
